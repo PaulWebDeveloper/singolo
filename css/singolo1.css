@@ -1,4 +1,4 @@
-@import "..//css/font.css";
+@import "..//css/fonts.css";
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@ ul {
 }
 
 a {
-
+  text-decoration: none;
 }
 
 body {
@@ -21,6 +21,7 @@ body {
 
 .wrapper {
   display: grid;
+  grid-template-areas: auto 90% auto / 100%;
   grid-template-areas: 
     "header"
     "main"
@@ -41,4 +42,52 @@ body {
 
 .field-header {
   grid-area: footer;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/**               Header               */
+
+header {
+  height: 89px;
+  background: #2d303a;
+  border-bottom: 6px solid #323645;
+}
+
+header .container {
+  display: grid;
+  grid-template-columns: 140px auto;
+  align-items: center;
+}
+
+nav {
+  display: grid;
+  justify-items: end;
+}
+
+nav ul {
+  width: 371px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(6, 1fr); 
+  justify-content: end;
+}
+
+nav a {
+  font-family: Lato-Bold, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav li:first-child a{
+  color: #f06c64;
+}
+
+nav a:hover {
+  color: #f06c64;
 }
