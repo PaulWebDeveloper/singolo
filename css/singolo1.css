@@ -13,10 +13,6 @@ a {
   text-decoration: none;
 }
 
-body {
-
-}
-
 button:focus {
   outline: transparent;
 }
@@ -73,13 +69,13 @@ h1 {
 
 nav {
   display: grid;
-  justify-items: end;
+  justify-self: end;
 }
 
 nav ul {
   width: 371px;
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 23px;
   grid-template-columns: repeat(6, 1fr); 
   justify-content: end;
 }
@@ -120,6 +116,16 @@ nav a:hover {
   background: transparent;
   border: transparent;
   cursor: pointer;
+}
+
+.arrow_left {
+  display: grid;
+  justify-self: start;
+}
+
+.arrow_right{
+  display: grid;
+  justify-self: end;
 }
 
 /**              Services              */
