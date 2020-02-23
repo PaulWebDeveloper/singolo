@@ -29,7 +29,7 @@ button:focus {
   grid-template-areas: 
     "header"
     "main"
-    "footer"
+    "footer";
 }
 
 .field {
@@ -104,7 +104,7 @@ nav a:hover {
 /**               Slider               */
 
 .slider {
-  height: 595px;
+  height: 594px;
   display: grid;
   align-content: center;
   background: #f06c64;
@@ -165,7 +165,7 @@ nav a:hover {
 }
 
 .services__description {
-  margin: 58px 0 53px 0;
+  margin: 58px 0 49px 0;
 }
 
 h2 {
@@ -176,7 +176,7 @@ h2 {
 }
 
 .services p {
-  height: 50px;
+  height: 55px;
   font-family: Lato-Light, Tahoma, sans-serif;
   font-size: 18px;
   line-height: 1.65;
