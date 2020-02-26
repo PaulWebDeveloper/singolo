@@ -17,6 +17,10 @@ body {
   font-family: Lato-Regular, Tahoma, sans-serif;
 }
 
+button:focus {
+  outline: transparent;
+}
+
 /**               Wrapper               */
 
 .wrapper {
@@ -47,4 +51,71 @@ body {
 .container {
   width: 940px;
   margin: 0 auto;
+}
+
+/**             Portfolio              */
+
+.portfolio {
+  height: 865px;
+  background: #2d303a;
+  border-bottom: 6px solid #323746;
+}
+
+.portfolio__description {
+  margin: 59px 0 10px 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-family: Lato-Black, Tahoma, sans-serif;
+  font-size: 30px;
+  color: #666d89;
+}
+
+.portfolio p {
+  font-family: Lato-Light, Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  text-align: justify; 
+  overflow: hidden;
+  color: #767e9e;
+}
+
+.portfolio__btn {
+  height: 22px;
+  margin-right: 9px;
+  padding: 0 7px;
+  font-family: Lato-Regular, Tahoma, sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #767e9e;
+  background: transparent;
+  border: 1px solid #666d89;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.portfolio__btn:first-child {
+  color: #dedede;
+  border: 1px solid #c5c5c5;
+}
+
+.portfolio__btn:hover {
+  color: #dedede;
+  border: 1px solid #c5c5c5;
+}
+
+.portfolio__examples {
+  height: 601px;
+  margin-top: 19px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+}
+
+.portfolio__examples li {
+  width: 220px;
+  height: 187px;
+  cursor: pointer;
 }
