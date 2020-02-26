@@ -1,0 +1,50 @@
+@import "..//css/fonts.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Lato-Regular, Tahoma, sans-serif;
+}
+
+/**               Wrapper               */
+
+.wrapper {
+  display: grid;
+  grid-template-areas: auto 90% auto / 100%;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.field {
+  display: grid;
+}
+
+.field-header {
+  grid-area: header;
+}
+
+.field-main {
+  grid-area: main;
+}
+
+.field-footer {
+  grid-area: footer;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
