@@ -21,33 +21,6 @@ button:focus {
   outline: transparent;
 }
 
-/**               Wrapper               */
-
-.wrapper {
-  display: grid;
-  grid-template-areas: auto 90% auto / 100%;
-  grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
-
-.field {
-  display: grid;
-}
-
-.field-header {
-  grid-area: header;
-}
-
-.field-main {
-  grid-area: main;
-}
-
-.field-footer {
-  grid-area: footer;
-}
-
 .container {
   width: 940px;
   margin: 0 auto;
@@ -62,7 +35,8 @@ button:focus {
 }
 
 h2 {
-  margin: 60px 0 18px -1px;
+  margin: 0 0 18px -1px;
+  padding-top: 60px;
   font-family: Lato-Black, Tahoma, sans-serif;
   font-size: 30px;
   color: #666d89;
