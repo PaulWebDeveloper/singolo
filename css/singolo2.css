@@ -56,23 +56,19 @@ button:focus {
 /**             Portfolio              */
 
 .portfolio {
-  height: 865px;
+  height: 864px;
   background: #2d303a;
   border-bottom: 6px solid #323746;
 }
 
-.portfolio__description {
-  margin: 59px 0 10px 0;
-}
-
 h2 {
-  margin-bottom: 20px;
+  margin: 60px 0 18px -1px;
   font-family: Lato-Black, Tahoma, sans-serif;
   font-size: 30px;
   color: #666d89;
 }
 
-.portfolio p {
+p {
   font-family: Lato-Light, Tahoma, sans-serif;
   font-size: 18px;
   line-height: 1.65;
@@ -81,9 +77,13 @@ h2 {
   color: #767e9e;
 }
 
+.portfolio__menu {
+  margin-top: 12px;
+}
+
 .portfolio__btn {
   height: 22px;
-  margin-right: 9px;
+  margin-right: 5px;
   padding: 0 7px;
   font-family: Lato-Regular, Tahoma, sans-serif;
   font-size: 12px;
@@ -118,4 +118,57 @@ h2 {
   width: 220px;
   height: 187px;
   cursor: pointer;
+}
+
+/**             About Us               */
+
+.about-us {
+  height: 729px;
+  background: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
+}
+
+h3 {
+  font-family: Lato-Black, Tahoma, sans-serif;
+  font-size: 18px;
+  color: #666d89;
+  overflow: hidden;
+}
+
+.about-us__employee {
+  margin-top: 46px;
+  display: grid;
+  grid-gap: 0 19px;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
+
+.about-us__employee li {
+  width: 300px;
+  height: 460px;
+}
+
+.about-us__photo {
+  margin-bottom: 12px;
+}
+
+.about-us__employee p {
+  width: 300px;
+  margin-top: 8px;
+  font-family: Lato-Regular, Tahoma, sans-serif;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.social {
+  width: 140px;
+  height: 35px;
+  margin: 21px 0;
+  display: grid;
+  grid-gap: 0 5px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.social a:hover {
+  opacity: 0.6;
 }
