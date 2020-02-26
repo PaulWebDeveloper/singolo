@@ -160,3 +160,42 @@ form input[type=submit]:hover {
 .contact__data span {
   margin-right: 7px;
 }
+
+/**               Footer               */
+
+footer {
+  height: 76px;
+  background: #2d303a;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: 130px auto;
+  justify-self: center;
+}
+
+.copy {
+  display: grid;
+  align-self: center;
+}
+
+footer p {
+  font-size: 12px;
+  font-family: Lato-Light, Tahoma, sans-serif;
+  color: #666d89;
+}
+
+.social {
+  width: 154px;
+  height: 35px;
+  display: grid;
+  justify-self: end;
+  margin: 21px 0;
+  display: grid;
+  grid-gap: 0 5px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.social a:hover {
+  opacity: 0.6;
+}
