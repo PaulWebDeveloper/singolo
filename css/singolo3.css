@@ -188,10 +188,9 @@ footer p {
 .social {
   width: 154px;
   height: 35px;
-  display: grid;
-  justify-self: end;
   margin: 21px 0;
   display: grid;
+  justify-self: end;
   grid-gap: 0 5px;
   grid-template-columns: repeat(4, 1fr);
 }
