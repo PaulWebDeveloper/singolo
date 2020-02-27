@@ -67,7 +67,6 @@ p.second-item {
 
 .wrapper {
   display: grid;
-  grid-template-areas: auto 90% auto / 100%;
   grid-template-areas: 
     "header"
     "main"
