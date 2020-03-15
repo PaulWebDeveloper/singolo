@@ -17,7 +17,7 @@
         <h1>Singolo</h1>
         <nav>
           <ul>
-            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="index.html" title="Home" class="active">Home</a></li>
             <li><a href="#services" title="Services">Services</a></li>
             <li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
             <li><a href="#about" title="About">About</a></li>
@@ -27,22 +27,39 @@
       </div>
     </header>
     <main class="field field-main">
-      <section class="slider">
+      <section class="slider slider-bg-1">
         <div class="container">
           <button class="slider__arrow arrow_left">
             <img src="assets/img/slider/arrow-left.png" alt="arrow-left">
           </button>
           <ul class="slider__content">
             <li class="show">
-              <div class="iPhones">
-                <img src="assets/img/slider/iPhoneVertical.png" alt="iPhoneVertical">
-                <img src="assets/img/slider/iPhoneHorizontal.png" alt="iPhoneHorizontal">
+              <div class="slide_first">
+                <div>
+                  <img src="assets/img/slider/iPhoneVertical.png" alt="iPhoneVertical">
+                  <div class="slider__screen iPhone-1"></div>
+                  <button class="slider__btn btn_iPhone-1"></button>
+                </div>
+                <div>
+                  <img src="assets/img/slider/iPhoneHorizontal.png" alt="iPhoneHorizontal">
+                  <div class="slider__screen iPhone-2"></div>
+                  <button class="slider__btn btn_iPhone-2"></button>
+                </div>
               </div>
             </li>
             <li>
-              <div class="iPhones">
-                <img src="assets/img/slider/iPhoneVertical.png" alt="iPhoneVertical">
-                <img src="assets/img/slider/iPhoneHorizontal.png" alt="iPhoneHorizontal">
+              <div class="slide_second">
+                <div>
+                  <img src="assets/img/slider/slide-2.png" alt="iPhones">
+                  <div>
+                    <div class="slider__screen iPhone-3"></div>
+                    <button class="slider__btn btn_small btn_iPhone-3"></button>
+                    <div class="slider__screen iPhone-4"></div>
+                    <button class="slider__btn btn_iPhone-4"></button>
+                    <div class="slider__screen iPhone-5"></div>
+                    <button class="slider__btn btn_small btn_iPhone-5"></button>
+                  </div>
+                </div>
               </div>
             </li>
           </ul>
@@ -144,7 +161,7 @@
             </p>
           </div>
           <div class="portfolio__menu">
-            <button class="portfolio__btn">All</button>
+            <button class="portfolio__btn active_tab">All</button>
             <button class="portfolio__btn">Web Design</button>
             <button class="portfolio__btn">Graphic Design</button>
             <button class="portfolio__btn">Artwork</button>
@@ -235,7 +252,7 @@
             </p>
           </div>
           <div class="contacts__request">
-            <form action="index.html" meghod="get">
+            <form action="index.html" method="post">
               <div class="form-row">
                 <label for="form__name"></label>
                 <input type="text" id="form__name" placeholder="Name (Required)" required />
@@ -249,10 +266,10 @@
                 <input type="text" id="form__subject" placeholder="Subject" />
               </div>
               <div class="form-row form__description">
-                <textarea>Describe your project in detail...</textarea>
+                <textarea id="textarea">Describe your project in detail...</textarea>
               </div>
               <div>
-                <input type="submit" value="Submit">
+                <input type="submit" id="submit" value="Submit">
               </div>
             </form>
             <div class="contact__information">
@@ -281,6 +298,14 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+        <div class="message-block hidden">
+          <div class="message">
+            <p>Письмо отправлено</p>
+            <p id="message__theme">Без темы</p>
+            <p id="message__description">Без описания</p> 
+            <button class="message-btn">Ok</button>
           </div>
         </div>
       </section>
