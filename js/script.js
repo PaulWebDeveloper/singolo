@@ -16,8 +16,8 @@ const message = document.querySelector('.message-block');
 const closeMessage = document.querySelector('.message-btn');
 const messageTheme = document.getElementById('message__theme');
 const messageDescription = document.getElementById('message__description');
-const initialString = 'Describe your project in detail...';
 
+let initialString = 'Describe your project in detail...';
 let current = 0;
 let last = 0;
 
@@ -62,14 +62,14 @@ sliderBtn.forEach((el,i) => el.onclick = () => {
 
 /** Portfolio. Tab switching */
 
-const portfolioTab = (value) => {
+const portfolioTab = (portfolio, value) => {
   let content = [];
 
   for (let i = 0; i < 2; i++) {
     content[i] = [];
   }
 
-  portfolioExamples.forEach((el,i) => {
+  portfolio.forEach((el,i) => {
     (i + 1 < value)
     ? content[1].push('<li>' + el.innerHTML + '</li>')
     : content[0].push('<li>' + el.innerHTML + '</li>')
@@ -83,16 +83,16 @@ portfolioMenu.forEach(item => item.onclick = () => {
   event.target.classList.add('active_tab');
 
   if (event.target.innerHTML == 'All') 
-    portfolio.innerHTML = portfolioTab(1);
+    portfolio.innerHTML = portfolioTab(portfolioExamples, 1);
 
   if (event.target.innerHTML == 'Web Design') 
-    portfolio.innerHTML = portfolioTab(2);
+    portfolio.innerHTML = portfolioTab(portfolioExamples, 2);
 
   if (event.target.innerHTML == 'Graphic Design') 
-    portfolio.innerHTML = portfolioTab(3);
+    portfolio.innerHTML = portfolioTab(portfolioExamples, 3);
 
   if (event.target.innerHTML == 'Artwork') 
-    portfolio.innerHTML = portfolioTab(4);
+    portfolio.innerHTML = portfolioTab(portfolioExamples, 4);
 
   loadPortfolio();
 });
