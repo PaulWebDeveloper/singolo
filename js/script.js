@@ -63,19 +63,15 @@ sliderBtn.forEach((el,i) => el.onclick = () => {
 /** Portfolio. Tab switching */
 
 const portfolioTab = (portfolio, value) => {
-  let content = [];
-
-  for (let i = 0; i < 2; i++) {
-    content[i] = [];
-  }
+  let left = [], right = [];
 
   portfolio.forEach((el,i) => {
     (i + 1 < value)
-    ? content[1].push('<li>' + el.innerHTML + '</li>')
-    : content[0].push('<li>' + el.innerHTML + '</li>')
-  })
+    ? right.push('<li>' + el.innerHTML + '</li>')
+    : left.push('<li>' + el.innerHTML + '</li>')
+  });
  
-  return content[0].concat(content[1]).join('');
+  return left.concat(right).join('');
 };
 
 portfolioMenu.forEach(item => item.onclick = () => {
