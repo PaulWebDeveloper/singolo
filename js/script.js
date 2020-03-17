@@ -62,15 +62,20 @@ sliderBtn.forEach((el,i) => el.onclick = () => {
 
 /** Portfolio. Tab switching */
 
-const portfolioTab = (value, n) => {
+const portfolioTab = (value) => {
   let content = [];
 
-  for (let i = 0; i < portfolioExamples.length; i++) {
-    if ((i + 1) % value === 0)
-      content.push('<li>' + portfolioExamples[i - n].innerHTML + '</li>');
+  for (let i = 0; i < 2; i++) {
+    content[i] = [];
   }
 
-  return content.join('');
+  portfolioExamples.forEach((el,i) => {
+    (i + 1 < value)
+    ? content[1].push('<li>' + el.innerHTML + '</li>')
+    : content[0].push('<li>' + el.innerHTML + '</li>')
+  })
+ 
+  return content[0].concat(content[1]).join('');
 };
 
 portfolioMenu.forEach(item => item.onclick = () => {
@@ -78,16 +83,16 @@ portfolioMenu.forEach(item => item.onclick = () => {
   event.target.classList.add('active_tab');
 
   if (event.target.innerHTML == 'All') 
-    portfolio.innerHTML = portfolioTab(1, 0);
+    portfolio.innerHTML = portfolioTab(1);
 
   if (event.target.innerHTML == 'Web Design') 
-    portfolio.innerHTML = portfolioTab(2, 0);
+    portfolio.innerHTML = portfolioTab(2);
 
   if (event.target.innerHTML == 'Graphic Design') 
-    portfolio.innerHTML = portfolioTab(2, 1);
+    portfolio.innerHTML = portfolioTab(3);
 
   if (event.target.innerHTML == 'Artwork') 
-    portfolio.innerHTML = portfolioTab(3, 1);
+    portfolio.innerHTML = portfolioTab(4);
 
   loadPortfolio();
 });
@@ -102,7 +107,7 @@ const loadPortfolio = () => {
     portfolio.querySelectorAll('li img').forEach(el => el.classList.remove('active_img'));
     event.target.classList.add('active_img');
   });
-}
+};
 
 loadPortfolio();
 
