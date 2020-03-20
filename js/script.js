@@ -35,16 +35,16 @@ menu.querySelectorAll('li a').forEach((el,i) => {
 elements = elements.map((el,i) => elements.slice(0, i + 1).reduce((sum, cur) => sum + cur));
 
 const scroll = () => {
-  let bodyPostition = Math.abs(document.querySelector('body').getBoundingClientRect().top);
+  let bodyPosition = Math.abs(document.querySelector('body').getBoundingClientRect().top);
 
   elements.forEach((el, i, arr) => {
     let min = elements[i-1] || 0;
-    if (bodyPostition < elements[i] && bodyPostition >= min - 300) {
+    if (bodyPosition < elements[i] && bodyPosition >= min - 300) {
       menu.querySelectorAll('li a').forEach(item => item.classList.remove('active'));
       menu.querySelectorAll('li a')[i].classList.add('active');
     }
 
-    if (bodyPostition === 2674) {
+    if (bodyPosition === 2674) {
       menu.querySelectorAll('li a').forEach(item => item.classList.remove('active'));
       menu.querySelectorAll('li a')[elements.length - 1].classList.add('active');
     }
@@ -56,9 +56,9 @@ const scrollMenu = () => {
   let element = document.getElementById(section);
 
   let elementPosition = element.getBoundingClientRect().top;
-  let bodyPostition = document.querySelector('body').getBoundingClientRect().top;
+  let bodyPosition = document.querySelector('body').getBoundingClientRect().top;
   
-  let offsetPosition = elementPosition - headerOffset - bodyPostition;
+  let offsetPosition = elementPosition - headerOffset - bodyPosition;
 
   window.scrollTo({
     top: offsetPosition,

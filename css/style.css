@@ -136,6 +136,7 @@ nav a {
 
 nav a:hover {
   color: #f06c64;
+  transition: 0.3s;
 }
 
 /**               Slider               */
@@ -192,11 +193,13 @@ nav a:hover {
 
 .slider__screen {
   opacity: 0;
+  transition: 0.3s;
   cursor: pointer;
 }
 
 .screen {
   opacity: 1;
+  transition: 0.3s;
 }
 
 .iPhone-1 {
@@ -380,6 +383,7 @@ nav a:hover {
 .portfolio__btn:hover {
   color: #dedede;
   border: 1px solid #c5c5c5;
+  transition: 0.3s;
 }
 
 .portfolio__examples {
