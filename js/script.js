@@ -77,16 +77,22 @@ window.addEventListener('scroll', () => scroll());
 /** Slider. Slide switch */
 
 const nextSlide = n => {
+  document.querySelector('.show').classList.remove('animation__right');
+  document.querySelector('.show').classList.remove('animation__left');
+
   slider[last].classList.remove('show');
   sliderBg.classList.remove('slider-bg-' + (last + 1));
   current += n;
-  
+
   if (current >= slider.length) current = 0;
   if (current < 0) current = slider.length - 1;
   
   last = current;
   slider[current].classList.add('show');
   sliderBg.classList.add('slider-bg-' + (current + 1));
+
+  if (n == 1) document.querySelector('.show').classList.add('animation__right');
+  else document.querySelector('.show').classList.add('animation__left');
 };
 
 btnPrev.onclick = () => nextSlide(-1);

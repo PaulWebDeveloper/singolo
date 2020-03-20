@@ -145,6 +145,7 @@ nav a:hover {
   height: 594px;
   display: grid;
   align-content: center;
+  transition: 1s;
 }
 
 .slider-bg-1 {
@@ -165,16 +166,46 @@ nav a:hover {
 
 .slider__content {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
 }
 
 .slider__content li {
-  position: absolute;
-  top: -240px;
   display: none;
 }
 
 .slider__content li.show {
   display: block;
+}
+
+.slider__content li.animation__right {
+  animation: slide-right 0.5s linear;
+}
+
+.slider__content li.animation__left {
+  animation: slide-left 0.5s linear;
+}
+
+@keyframes slide-right {
+  0% {
+      transform: translateX(120%);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+      transform: translateX(-120%);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
 }
 
 .slide_first {
@@ -185,7 +216,6 @@ nav a:hover {
 }
 
 .slide_second {
-  margin-left: 50%;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -202,12 +232,18 @@ nav a:hover {
   transition: 0.3s;
 }
 
+.slider__iPhone-1,
+.slider__iPhone-2,
+.slider__iPhone-3 {
+  position: relative;
+}
+
 .iPhone-1 {
   width: 188px;
   height: 333px;
   position: absolute;
-  top: 60px;
-  left: 17px;
+  top: 65px;
+  left: 14px;
   background: #000000;
 }
 
@@ -215,8 +251,8 @@ nav a:hover {
   width: 333px;
   height: 188px;
   position: absolute;
-  top: 131px;
-  left: 374px;
+  top: 15px;
+  left: 61px;
   background: #000000;
 }
 
@@ -225,7 +261,7 @@ nav a:hover {
   height: 217px;
   position: absolute;
   top: 151px;
-  left: 138px;
+  left: 9px;
   background: #333333;
 }
 
@@ -234,7 +270,7 @@ nav a:hover {
   height: 354px;
   position: absolute;
   top: 69px;
-  left: 274px;
+  left: 145px;
   background: #000000;
 }
 
@@ -243,7 +279,7 @@ nav a:hover {
   height: 217px;
   position: absolute;
   top: 151px;
-  left: 498px;
+  left: 369px;
   background: #333333;
 }
 
@@ -263,32 +299,32 @@ nav a:hover {
 
 .btn_iPhone-1 {
   position: absolute;
-  top: 403px;
-  left: 91px;
+  top: 408px;
+  left: 87px;
 }
 
 .btn_iPhone-2 {
   position: absolute;
-  top: 204px;
-  left: 323px;
+  top: 87px;
+  left: 10px;
 }
 
 .btn_iPhone-3 {
   position: absolute;
   top: 375px;
-  left: 185px;
+  left: 56px;
 }
 
 .btn_iPhone-4 {
   position: absolute;
-  top: 438px;
-  left: 352px;
+  top: 435px;
+  left: 227px;
 }
 
 .btn_iPhone-5 {
   position: absolute;
-  top: 374px;
-  left: 547px;
+  top: 375px;
+  left: 418px;
 }
 
 .slider__arrow {
