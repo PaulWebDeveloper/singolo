@@ -1,4 +1,6 @@
 const menu = document.querySelector('nav ul');
+const sections = document.querySelectorAll('main section');
+const headerOffset = document.querySelector('header').clientHeight;
 
 const slider = document.querySelectorAll('.slider__content li');
 const sliderBg = document.querySelector('.slider');
@@ -18,16 +20,58 @@ const messageTheme = document.getElementById('message__theme');
 const messageDescription = document.getElementById('message__description');
 
 let initialString = 'Describe your project in detail...';
+let elements = [];
 let current = 0;
 let last = 0;
 
 
 /** Header */
+  
+menu.querySelectorAll('li a').forEach((el,i) => {
+  let value = document.getElementById(el.getAttribute('href').substr(1)).offsetHeight;
+  elements.push(value);
+});
+
+elements = elements.map((el,i) => elements.slice(0, i + 1).reduce((sum, cur) => sum + cur));
+
+const scroll = () => {
+  let bodyPostition = Math.abs(document.querySelector('body').getBoundingClientRect().top);
+
+  elements.forEach((el, i, arr) => {
+    let min = elements[i-1] || 0;
+    if (bodyPostition < elements[i] && bodyPostition >= min - 300) {
+      menu.querySelectorAll('li a').forEach(item => item.classList.remove('active'));
+      menu.querySelectorAll('li a')[i].classList.add('active');
+    }
+
+    if (bodyPostition === 2674) {
+      menu.querySelectorAll('li a').forEach(item => item.classList.remove('active'));
+      menu.querySelectorAll('li a')[elements.length - 1].classList.add('active');
+    }
+  });
+};
+
+const scrollMenu = () => {
+  let section = event.target.getAttribute('href').substr(1);
+  let element = document.getElementById(section);
+
+  let elementPosition = element.getBoundingClientRect().top;
+  let bodyPostition = document.querySelector('body').getBoundingClientRect().top;
+  
+  let offsetPosition = elementPosition - headerOffset - bodyPostition;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth"
+  });
+};
 
 menu.addEventListener('click', (event) => {
-  menu.querySelectorAll('li a').forEach(el => el.classList.remove('active'));
-  event.target.classList.add('active');
+  event.preventDefault();
+  scrollMenu();
 });
+
+window.addEventListener('scroll', () => scroll());
 
 
 /** Slider. Slide switch */
@@ -112,15 +156,15 @@ loadPortfolio();
 
 const messageGeneration  = () => {
   if(document.getElementById('form__subject').value) {
-    messageTheme.innerHTML = 'Тема: ' + document.getElementById('form__subject').value;
+    messageTheme.innerHTML = 'Subject: ' + document.getElementById('form__subject').value;
   } else {
-    messageTheme.innerHTML = 'Без темы';
+    messageTheme.innerHTML = 'No subject';
   }
 
   if(document.getElementById('textarea').value && document.getElementById('textarea').value != initialString) {
-    messageDescription.innerHTML = 'Описание: ' + document.getElementById('textarea').value;
+    messageDescription.innerHTML = 'Description: ' + document.getElementById('textarea').value;
   } else {
-    messageDescription.innerHTML = 'Без описания';
+    messageDescription.innerHTML = 'No description';
   }
 };
 
