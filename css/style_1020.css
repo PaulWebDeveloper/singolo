@@ -1,0 +1,194 @@
+@media  (max-width: 1020px) {
+
+  .wrapper .container {
+    width: 688px;
+    padding: 0 40px;
+  }
+
+  /**               Slider               */
+
+  main .slider {
+    height: 444px;
+  }
+
+  .slider-bg-1 {
+    border-bottom: 5px solid #ea676b;
+  }
+
+  .slider-bg-2 {
+    border-bottom: 5px solid #5981e7;
+  }
+
+  main .slider .container {
+    width: 734px;
+    padding: 0 27px;
+    grid-gap: 54px;
+    grid-template-columns: 16px 600px 16px;
+    justify-items: center;
+  }
+
+  .slider .slide_first {
+    grid-template-columns: 181px 364px;
+    grid-gap: 0 55px;
+  }
+
+  .slider__iPhone-1 img {
+    width: 181px;
+    height: 364px;
+  }
+
+  .slider__iPhone-2 img {
+    width: 364px;
+    height: 181px;
+  }
+
+  .slider__iPhone-3 img {
+    width: 398px;
+    height: 395px;
+  }
+
+  .slider__iPhone-1 .iPhone-1 {
+    width: 143px;
+    height: 251px;
+    top: 49px;
+    left: 10px;
+  }
+
+  .slider__iPhone-2 .iPhone-2 {
+    width: 250px;
+    height: 142px;
+    top: 11px;
+    left: 45px;
+  }
+
+   .slider__iPhone-3 .iPhone-3 {
+    width: 94px;
+    height: 168px;
+    top: 116px;
+    left: 7px;
+  }
+
+  .slider__iPhone-3 .iPhone-4 {
+    width: 155px;
+    height: 273px;
+    top: 53px;
+    left: 112px;
+  }
+
+  .slider__iPhone-3 .iPhone-5 {
+    width: 95px;
+    height: 168px;
+    top: 116px;
+    left: 284px;
+  }
+
+  .slider__content .slider__btn {
+    width: 31px;
+    height: 31px;
+  }
+
+  .slide_second .btn_small {
+    width: 20px;
+    height: 20px;
+  }
+
+  .slider__iPhone-1 .btn_iPhone-1 {
+    top: 308px;
+    left: 65px;
+  }
+
+  .slider__iPhone-2 .btn_iPhone-2 {
+    top: 66px;
+    left: 8px;
+  }
+
+  .slider__iPhone-3 .btn_iPhone-3 {
+    top: 289px;
+    left: 44px;
+  }
+
+  .slider__iPhone-3 .btn_iPhone-4 {
+    top: 335px;
+    left: 173px;
+  }
+
+  .slider__iPhone-3 .btn_iPhone-5 {
+    top: 289px;
+    left: 321px;
+  }
+
+  /**              Services              */
+
+  main .services {
+    height: 668px;
+    border-bottom: 5px solid #fff;
+  }
+
+  .services .services__offer {
+    grid-gap: 38px 53px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /**             Portfolio              */
+
+  main .portfolio {
+    height: 1095px;
+  }
+
+  .portfolio .portfolio__examples {
+    height: 808px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .portfolio .portfolio__examples li {
+    width: 216px;
+    height: 183px;
+    cursor: pointer;
+  }
+
+  .portfolio .active_img {
+    width: 206px;
+    height: 173px;
+    border: 5px solid #F06C64;
+  }
+
+    /**             About Us               */
+
+  main .about-us {
+    height: 663px;
+    background: #f2f2f2;
+    border-bottom: 5px solid #ffffff;
+  }
+
+  .about-us__employee .about-us__photo {
+    width: 220px;
+    height: 217px;
+  }
+
+  .about-us .about-us__employee li,
+  .about-us .about-us__employee p {
+    width: 220px;
+  }
+
+  /**              Contacts              */
+
+  main .contacts {
+    height: 626px;
+    border-bottom: 5px solid #ea676b;
+  }
+
+  .contacts .contacts__request {
+    grid-gap: 60px;
+    grid-template-columns: 442px 220px;
+  }
+
+  .contacts__request form {
+    width: 442px;
+  }
+
+  .contacts__request form textarea {
+    height: 158px;
+    padding-top: 7px;
+  }
+}

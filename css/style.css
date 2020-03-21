@@ -26,7 +26,7 @@ button:focus {
 }
 
 h1 {
-  width: 100px;
+  height: 0;
   visibility: hidden;
 }
 
@@ -108,7 +108,7 @@ header {
 
 header .container {
   display: grid;
-  grid-template-columns: 140px 100px auto;
+  grid-template-columns: 140px auto;
   align-items: center;
 }
 
@@ -289,6 +289,7 @@ nav a:hover {
 .slider__btn {
   width: 40px;
   height: 40px;
+  position: absolute;
   background: transparent;
   border: transparent;
   border-radius: 50px;
@@ -301,31 +302,26 @@ nav a:hover {
 }
 
 .btn_iPhone-1 {
-  position: absolute;
   top: 408px;
   left: 87px;
 }
 
 .btn_iPhone-2 {
-  position: absolute;
   top: 87px;
   left: 10px;
 }
 
 .btn_iPhone-3 {
-  position: absolute;
   top: 375px;
   left: 56px;
 }
 
 .btn_iPhone-4 {
-  position: absolute;
   top: 435px;
   left: 227px;
 }
 
 .btn_iPhone-5 {
-  position: absolute;
   top: 375px;
   left: 418px;
 }
