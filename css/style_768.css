@@ -313,12 +313,12 @@
   }
 
   /**               Footer               */
+  
   .wrapper footer {
     display: grid;
     justify-items: center;
   }
   
-
   .wrapper footer .container {
     width: auto;
     grid-template-columns: 1fr;
