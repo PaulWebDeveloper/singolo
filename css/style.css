@@ -1,4 +1,7 @@
 @import "..//css/fonts.css";
+@import "..//css/style_1020.css";
+@import "..//css/style_768.css";
+@import "..//css/style_375.css";
 
 * {
   margin: 0;
