@@ -114,6 +114,7 @@ header .container {
 
 nav {
   display: grid;
+  grid-template-columns: 25px auto;
   justify-self: end;
 }
 
@@ -130,6 +131,17 @@ nav a {
   font-family: Lato-Bold, Tahoma, sans-serif;
   text-transform: uppercase;
   color: #fff;
+}
+
+/*.header-tab-menu {
+  display: none;
+}*/
+
+.btn-tab-menu {
+  display: none;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
 }
 
 .active {

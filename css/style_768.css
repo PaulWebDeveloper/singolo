@@ -1,0 +1,335 @@
+@media  (max-width: 768px) {
+
+  .wrapper .container {
+    width: 295px;
+  }
+
+  /**               Wrapper               */
+
+  body .wrapper {
+    grid-template-rows: 71px auto auto;
+  }
+
+  /**               Header               */
+
+  .wrapper header {
+    height: 71px;
+    border-bottom: 0;
+  }
+
+  .wrapper header .container {
+    grid-template-columns: 65px auto;
+  }
+
+  header .logo {
+
+  }
+
+  nav .btn-tab-menu {
+    height: 25px;
+    width: 25px;
+    display: block;
+  }
+
+  header nav ul {
+    display: none;
+  }
+  
+  .tab-active {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .nav-drop-menu {
+    width: 120px;
+    height: 180px;
+    background: rgba(150, 150, 150, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    display: block;
+  }
+
+  .nav-drop-menu li {
+    width: 100px;
+    height: 20px;
+    padding: 5px 10px;
+  }
+
+  /**               Slider               */
+
+  main .slider {
+    height: 218px;
+  }
+
+  .slider-bg-1 {
+    border-bottom: 3px solid #ea676b;
+  }
+
+  .slider-bg-2 {
+    border-bottom: 3px solid #5981e7;
+  }
+
+  main .slider .container {
+    width: 734px;
+    padding: 0 9px;
+    grid-gap: 15px;
+    grid-template-columns: 14px 292px 14px;
+    justify-items: center;
+  }
+
+  .slider .slide_first {
+    margin-top: 4px;
+    grid-template-columns: 88px 178px;
+    grid-gap: 0 26px;
+  }
+
+  .slider__iPhone-1 img {
+    width: 89px;
+    height: 178px;
+  }
+
+  .slider__iPhone-2 img {
+    width: 178px;
+    height: 89px;
+  }
+
+  .slider__iPhone-3 img {
+    width: 199px;
+    height: 197px;
+  }
+
+  .slider__iPhone-1 .iPhone-1 {
+    width: 71px;
+    height: 123px;
+    top: 24px;
+    left: 5px;
+  }
+
+  .slider__iPhone-2 .iPhone-2 {
+    width: 123px;
+    height: 70px;
+    top: 5px;
+    left: 22px;
+  }
+
+   .slider__iPhone-3 .iPhone-3 {
+    width: 47.5px;
+    height: 84px;
+    top: 58px;
+    left: 3px;
+  }
+
+  .slider__iPhone-3 .iPhone-4 {
+    width: 77.5px;
+    height: 137px;
+    top: 26px;
+    left: 56px;
+  }
+
+  .slider__iPhone-3 .iPhone-5 {
+    width: 47.5px;
+    height: 84px;
+    top: 58px;
+    left: 142px;
+  }
+
+  .slider__content .slider__btn {
+    width: 15px;
+    height: 15px;
+  }
+
+  .slide_second .btn_small {
+    width: 10px;
+    height: 10px;
+  }
+
+  .slider__iPhone-1 .btn_iPhone-1 {
+    top: 151px;
+    left: 32px;
+  }
+
+  .slider__iPhone-2 .btn_iPhone-2 {
+    top: 33px;
+    left: 3px;
+  }
+
+  .slider__iPhone-3 .btn_iPhone-3 {
+    top: 144px;
+    left: 22px;
+  }
+
+  .slider__iPhone-3 .btn_iPhone-4 {
+    top: 168px;
+    left: 87px;
+  }
+
+  .slider__iPhone-3 .btn_iPhone-5 {
+    top: 144px;
+    left: 161px;
+  }
+
+  .slider__arrow img {
+    width: 14px;
+    height: 25px;
+  }
+
+  /**              Services              */
+
+  main .services {
+    height: 1029px;
+    border-bottom: 3px solid #fff;
+  }
+
+  .wrapper .services .container {
+    width: auto;
+  }
+
+  .services .services__offer {
+    grid-gap: 38px 0;
+    grid-template-columns: 1fr;
+  }
+
+  /**             Portfolio              */
+
+  main .portfolio {
+    height: 841px;
+    border-bottom: 3px solid #323746;
+  }
+
+  .wrapper .portfolio .container {
+    width: auto;
+  }
+
+  .portfolio p {
+    height: 90px;
+    width: 335px;
+  }
+
+  .portfolio .portfolio__examples {
+    height: 557px;
+    width: 314px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 13px;
+  }
+
+  .portfolio .portfolio__examples li {
+    width: 151px;
+    height: 127px;
+    cursor: pointer;
+  }
+
+  .portfolio .portfolio__examples img {
+    width: 151px;
+    height: 127px;
+  }
+
+  .portfolio .active_img {
+    width: 206px;
+    height: 173px;
+  }
+
+    /**             About Us               */
+
+  main .about-us {
+    height: 1775px;
+    border-bottom: 3px solid #ffffff;
+  }
+
+  .wrapper .about-us .container {
+    width: auto;
+  }
+
+  .about-us p {
+    height: 180px;
+    width: 335px;
+  }
+
+  .about-us .about-us__employee {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us__employee .about-us__photo {
+    width: 314px;
+    height: 314px;
+  }
+
+  .about-us .about-us__employee li,
+  .about-us .about-us__employee p {
+    width: 314px;
+  }
+
+  /**              Contacts              */
+
+  main .contacts {
+    height: 966px;
+    border-bottom: 3px solid #ea676b;
+  }
+
+  .wrapper .contacts .container {
+    width: auto;
+  }
+
+  .contacts .contacts__request {
+    margin-top: 20px;
+    grid-gap: 60px;
+    grid-template-columns: 1fr;
+    grid-gap: 20px 0;
+  }
+
+  .contacts p {
+    height: 180px;
+    width: 315px;
+  }
+
+  .contacts__request form {
+    width: 315px;
+  }
+
+  .contacts__request form textarea {
+    height: 159px;
+    padding-top: 7px;
+  }
+
+  .contacts__request form input,
+  .contacts__request form textarea {
+    width: 300px;
+  }
+
+  .contacts__request form input[type="submit"] {
+    width: 315px;
+    height: 50px;
+  }
+
+  .contacts__request p {
+    height: 80px;
+    width: 315px;
+  }
+
+  /**               Footer               */
+  .wrapper footer {
+    display: grid;
+    justify-items: center;
+  }
+  
+
+  .wrapper footer .container {
+    width: auto;
+    grid-template-columns: 1fr;
+    justify-self: center;
+  }
+  
+  footer .copy {
+    display: none;
+  }
+
+  .wrapper footer .social {
+    justify-self: center;
+  }
+}

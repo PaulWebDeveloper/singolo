@@ -1,6 +1,7 @@
 const menu = document.querySelector('nav ul');
 const sections = document.querySelectorAll('main section');
 const headerOffset = document.querySelector('header').clientHeight;
+const dropMenu = document.getElementById('tab');
 
 const slider = document.querySelectorAll('.slider__content li');
 const sliderBg = document.querySelector('.slider');
@@ -185,4 +186,11 @@ submit.onclick = (event) => {
 closeMessage.onclick = () => {
   message.classList.add('hidden');
   document.querySelector('form').reset();
+};
+
+/** Nav-drop-menu */
+
+dropMenu.onclick = () => {
+  menu.classList.toggle('nav-drop-menu');
+  dropMenu.classList.toggle('tab-active');
 };

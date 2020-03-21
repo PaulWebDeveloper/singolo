@@ -150,14 +150,12 @@
   .portfolio .active_img {
     width: 206px;
     height: 173px;
-    border: 5px solid #F06C64;
   }
 
     /**             About Us               */
 
   main .about-us {
     height: 663px;
-    background: #f2f2f2;
     border-bottom: 5px solid #ffffff;
   }
 
@@ -188,7 +186,7 @@
   }
 
   .contacts__request form textarea {
-    height: 158px;
+    height: 159px;
     padding-top: 7px;
   }
 }
