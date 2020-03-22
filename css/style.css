@@ -230,6 +230,7 @@ nav a:hover {
 }
 
 .slide_second {
+  margin: 7px 0 0 2px;
   display: grid;
   justify-content: center;
   align-content: center;
