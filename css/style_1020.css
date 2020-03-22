@@ -56,7 +56,7 @@
   }
 
   .slide_first .slider__iPhone-2 {
-    margin: 0px 0px 4px -7px;
+    margin: 0 0 4px -7px;
   }
 
   .slider__iPhone-1 img {
@@ -151,12 +151,12 @@
     border-bottom: 5px solid #fff;
   }
 
-  .services h2 {
-    padding-top: 40px;
-  }
-
   .services .services__description {
     margin-bottom: 36px;
+  }
+
+  .services h2 {
+    padding-top: 40px;
   }
 
   .services__description p {
