@@ -194,7 +194,6 @@
   .portfolio .portfolio__examples li {
     width: 215px;
     height: 184px;
-    cursor: pointer;
   }
 
   .portfolio__examples li img {
@@ -242,7 +241,6 @@
   .about-us .social {
     margin: 9px 0;
   }
-
 
   /**              Contacts              */
 

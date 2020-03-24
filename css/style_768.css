@@ -3,7 +3,7 @@
   .wrapper h2,
   .wrapper h3,
   .wrapper p {
-    max-width: 315px;
+    max-width: 305px;
   }
 
   .wrapper .container {
@@ -25,8 +25,9 @@
   }
 
   .wrapper header .container {
-    margin: 3px 0 0 73px;
-    width: 375px;
+    width: 335px;
+    padding: 0 20px;
+    margin-top: 3px;
     grid-gap: 26px;
     grid-template-columns: 25px 120px;
     grid-template-rows: 1fr;
@@ -92,7 +93,7 @@
 
   .nav-drop-menu {
     width: 278px;
-    height: 100vh;
+    height: 120vh;
     display: block;
     position: absolute;
     top: 0;
@@ -124,6 +125,13 @@
     height: 214px;
   }
 
+  main .slider .container {
+    width: 355px;
+    padding: 0 10px 8px 10px;
+    grid-gap: 16px;
+    grid-template-columns: 14px 294px 14px;
+  }
+
   .slider-bg-1 {
     border-bottom: 3px solid #ea676b;
   }
@@ -132,21 +140,14 @@
     border-bottom: 3px solid #5981e7;
   }
 
-  main .slider .container {
-    width: 375px;
-    padding: 0 0 8px 14px;
-    grid-gap: 17px;
-    grid-template-columns: 14px 294px 14px;
-  }
-
   .slider .slide_first {
     margin-top: 4px;
-    grid-template-columns: 89px 178px;
+    grid-template-columns: 89px 177px;
     grid-gap: 0 26px;
   }
 
   .slide_first .slider__iPhone-2 {
-    margin: 0 0 4px 2px;
+    margin: 0 0 3px 0;
   }
 
   .slider__iPhone-1 img {
@@ -247,7 +248,7 @@
   }
 
   .services .services__description {
-    margin-bottom: 32px;
+    margin-bottom: 31px;
   }
 
   .services h2 {
@@ -257,7 +258,7 @@
 
   .services__description p {
     height: 203px;
-    width: 295px;
+    width: 305px;
     line-height: 1.7;
   }
 
@@ -288,29 +289,32 @@
     margin-top: 15px;
   }
 
+  .portfolio__menu button {
+    margin-right: 6px;
+  }
+
   .portfolio .portfolio__examples {
     height: 557px;
-    width: 314px;
-    margin-top: 24px;
+    width: 317px;
+    margin-top: 25px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-gap: 15px;
+    grid-gap: 15px 13px;
   }
 
   .portfolio .portfolio__examples li {
     width: 151px;
     height: 127px;
-    cursor: pointer;
   }
 
-  .portfolio .portfolio__examples img {
+  .portfolio__examples li img {
     width: 151px;
     height: 127px;
   }
 
   .portfolio .active_img {
-    width: 206px;
-    height: 173px;
+    width: 141px;
+    height: 117px;
   }
 
     /**             About Us               */
@@ -324,9 +328,10 @@
     padding-top: 33px;
   }
 
-  .about-us p {
+  .about-us .about-us__description p {
     height: 180px;
-    width: 335px;
+    width: 315px;
+    line-height: 1.7;
   }
 
   .about-us .about-us__employee {
@@ -338,7 +343,7 @@
 
   .about-us .about-us__employee li{
     width: 314px;
-    height: 473px;
+    height: 474px;
   }
   .about-us__employee .about-us__photo {
     width: 314px;
@@ -346,9 +351,13 @@
     margin-bottom: 13px;
   }
 
-  .about-us .about-us__employee p {
+  .about-us__employee p {
     width: 314px;
     height: 44px;
+  }
+
+  .about-us .social {
+    margin: 11px 0;
   }
 
   /**              Contacts              */
@@ -381,6 +390,7 @@
   .contacts__request form textarea {
     height: 152px;
     padding-top: 7px;
+    margin-bottom: 10px;
   }
 
   .contacts__request form input,
@@ -391,16 +401,28 @@
   .contacts__request form input[type="submit"] {
     width: 315px;
     height: 50px;
-    margin-top: -1px;
   }
 
   .contacts__request p {
-    height: 80px;
+    height: 84px;
     width: 315px;
   }
 
   .contacts__request .contact__data {
-    padding-top: 20px;
+    padding-top: 15px;
+  }
+
+  .contacts__request .contact__data li {
+    height: 25px;
+  }
+
+  .contacts .message {
+    max-width: 280px;
+  }
+
+  .contacts .message p {
+    width: auto;
+    height: auto;
   }
 
   /**               Footer               */
