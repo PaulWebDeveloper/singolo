@@ -11,7 +11,7 @@
     padding: 0 0;
   }
 
-  /**               Wrapper               */
+  /**               Header               */
 
   .wrapper header .container {
     width: 305px;
@@ -19,6 +19,11 @@
     margin-top: 3px;
     grid-gap: 10px;
     grid-template-columns: 25px 120px;
+  }
+
+
+  .tab-menu-active img {
+    margin-left: 13px;
   }
 
   /**               Slider               */

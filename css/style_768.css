@@ -53,11 +53,14 @@
     margin: 2px 0 0 78px;
   }
 
-  .tab-menu-active {
+  .logo-active {
     z-index: 2;
+    position: fixed;
+    top: 27px;
+    left: 72px;
   }
 
-  .tab-menu-active img {
+  .logo-active img {
     margin-left: 0;
   }
 
@@ -70,7 +73,7 @@
   header nav ul {
     display: none;
   }
-  
+
   .tab-active {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -78,6 +81,9 @@
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
     z-index: 2;
+    position: fixed;
+    top: 24px;
+    left: 18px;
   }
 
   .header-tab-menu {

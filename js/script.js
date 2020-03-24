@@ -40,6 +40,12 @@ const scroll = () => {
 
   elements.forEach((el, i, arr) => {
     let min = elements[i-1] || 0;
+
+    if (bodyPosition === 0) {
+      menu.querySelectorAll('li a').forEach(item => item.classList.remove('active'));
+      menu.querySelectorAll('li a')[0].classList.add('active');
+    }
+
     if (bodyPosition < elements[i] && bodyPosition >= min - 300) {
       menu.querySelectorAll('li a').forEach(item => item.classList.remove('active'));
       menu.querySelectorAll('li a')[i].classList.add('active');
@@ -193,4 +199,6 @@ closeMessage.onclick = () => {
 dropMenu.onclick = () => {
   menu.classList.toggle('nav-drop-menu');
   dropMenu.classList.toggle('tab-active');
+  document.querySelector('.logo').classList.toggle('logo-active');
+  document.querySelector('.overlay').classList.toggle('overlay-tint');
 };
