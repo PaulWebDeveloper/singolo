@@ -1,4 +1,4 @@
-@media  (max-width: 767px) {
+@media (max-width: 767px) {
 
   .wrapper h2,
   .wrapper h3,
@@ -259,6 +259,7 @@
   .services__description p {
     height: 203px;
     width: 305px;
+    text-align: left;
     line-height: 1.7;
   }
 
@@ -331,6 +332,7 @@
   .about-us .about-us__description p {
     height: 180px;
     width: 315px;
+    text-align: left;
     line-height: 1.7;
   }
 
@@ -341,10 +343,11 @@
     grid-gap: 0 0;
   }
 
-  .about-us .about-us__employee li{
+  .about-us .about-us__employee li {
     width: 314px;
     height: 474px;
   }
+
   .about-us__employee .about-us__photo {
     width: 314px;
     height: 314px;
@@ -367,8 +370,12 @@
     border-bottom: 3px solid #ea676b;
   }
 
-  .contacts .container h2 {
+  .contacts .contacts__description h2 {
     padding: 44px 0 0 2px;
+  }
+
+  .contacts .contacts__description p {
+    text-align: left;
   }
 
   .contacts .contacts__request {
