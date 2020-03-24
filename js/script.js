@@ -74,6 +74,8 @@ const scrollMenu = () => {
 };
 
 menu.addEventListener('click', (event) => {
+  menu.querySelectorAll('li a').forEach(item => item.classList.remove('active'));
+  event.target.classList.add('active');
   event.preventDefault();
   scrollMenu();
 });
