@@ -198,9 +198,11 @@ closeMessage.onclick = () => {
 
 /** Nav-drop-menu */
 
-dropMenu.onclick = () => {
+const dropNavMenu = () => {
   menu.classList.toggle('nav-drop-menu');
   dropMenu.classList.toggle('tab-active');
   document.querySelector('.logo').classList.toggle('logo-active');
   document.querySelector('.overlay').classList.toggle('overlay-tint');
 };
+
+dropMenu.onclick = () => dropNavMenu();
