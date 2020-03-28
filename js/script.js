@@ -80,7 +80,7 @@ menu.addEventListener('click', (event) => {
   scrollMenu();
 });
 
-window.addEventListener('scroll', () => scroll());
+window.addEventListener('wheel', () => scroll());
 
 
 /** Slider. Slide switch */
